@@ -1,3 +1,17 @@
+# `blink-attiny`
+
+An example project for `ATTINY`.
+
+## Requirements
+
+- `platformio`
+
+
+## License
+
+ISC license unless other license is used in files.
+
+```c
 /*
  * Copyright (c) 2020 Tomoyuki Sakurai <y@trombik.org>
  *
@@ -13,16 +27,4 @@
  * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
  * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
-
-void setup()
-{
-	pinMode(0, OUTPUT);
-}
-void loop()
-{
-	digitalWrite(0, HIGH);
-	delay(500);
-
-	digitalWrite(0, LOW);
-	delay(1000);
-}
+```
