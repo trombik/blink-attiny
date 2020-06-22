@@ -16,6 +16,12 @@
 
 void setup()
 {
+#if defined(ARDUINO_AVR_ATTINY13)
+    /* run at 8 Mhz. by default, attiny13 runs at 1/8 clock, or 1 Mhz.
+     * with this, you do not have to set fuse bits */
+    CLKPR = _BV(CLKPCE);
+    CLKPR = 0;
+#endif
 	pinMode(0, OUTPUT);
 }
 void loop()
